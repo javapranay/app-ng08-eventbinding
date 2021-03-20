@@ -1,0 +1,15 @@
+<p>event-demo works!</p>
+<button (click)="showAlert()">SUBMIT</button><br><br>
+<select (change)="showAlert()">
+    <option>Pune</option>
+    <option>Hyderabad</option>
+    <option>Navi Mumbai</option>
+</select>
+<div>
+    <h2>Color Panel</h2>
+    <img (click)="getColor($event)" src="assets\cross.png">
+    <br><br>
+    <div>
+        <h2 [ngStyle]="setColor()">Sample Text with {{colorName}} color...</h2>
+    </div>
+</div>
