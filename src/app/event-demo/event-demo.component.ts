@@ -15,10 +15,10 @@ export class EventDemoComponent implements OnInit {
   }
 
   public showAlert() {
-    alert("Event Fired Up...");
+    window.alert("Event Fired Up...");
   }
 
-  public getColor(eventArgs: any) {
+  public setColor(eventArgs: any) {
     if(eventArgs.clientX >= 1 && eventArgs.clientX <= 178) {
       this.colorName = 'red';
     }else if(eventArgs.clientX >= 184 && eventArgs.clientX <= 398) {
@@ -28,9 +28,10 @@ export class EventDemoComponent implements OnInit {
     }
   }
 
-  public setColor(): any{
-    let color = {
+  public getColor(){
+    let textColor = {
       'color': this.colorName
     };
+    return textColor;
   }
 }

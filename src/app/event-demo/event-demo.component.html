@@ -7,9 +7,9 @@
 </select>
 <div>
     <h2>Color Panel</h2>
-    <img (click)="getColor($event)" src="assets\cross.png">
+    <img (click)="setColor($event)" src="assets\cross.png">
     <br><br>
     <div>
-        <h2 [ngStyle]="setColor()">Sample Text with {{colorName}} color...</h2>
+        <h2 [ngStyle]="getColor()">Sample Text with {{colorName}} color...</h2>
     </div>
 </div>
