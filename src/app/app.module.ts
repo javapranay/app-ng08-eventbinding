@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { EventDemoComponent } from './event-demo/event-demo.component';
 import { MousemoveComponent } from './event-demo/mousemove/mousemove.component';
 import { MouseEventComponent } from './event-demo/mouse-event/mouse-event.component';
+import { KeyEventComponent } from './event-demo/key-event/key-event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventDemoComponent,
     MousemoveComponent,
-    MouseEventComponent
+    MouseEventComponent,
+    KeyEventComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
