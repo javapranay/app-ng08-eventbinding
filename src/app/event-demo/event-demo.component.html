@@ -1,4 +1,4 @@
-<p>event-demo works!</p>
+<p style="font-weight: bolder;">event-demo works!</p>
 <button (click)="showAlert()">SUBMIT</button><br><br>
 <select (change)="showAlert()">
     <option>Pune</option>
@@ -13,5 +13,7 @@
         <h2 [ngStyle]="getColor()">Sample Text with {{colorName}} color...</h2>
     </div>
 </div>
-<app-mousemove></app-mousemove>
+
 <app-mouse-event></app-mouse-event>
+<app-key-event></app-key-event>
+<app-mousemove></app-mousemove>

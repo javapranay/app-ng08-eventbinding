@@ -1,0 +1,31 @@
+<p style="font-weight: bold;">key-event works!</p>
+<div class="container">
+    Your Text: <input type="text" (keypress)="getCodes($event)">
+    <br>
+    <dl>
+        <dt>Key Code:</dt>
+        <dd>{{keyCode}}</dd>
+        <dt>Char Code:</dt>
+        <dd>{{charCode}}</dd>
+        <dt>Which:</dt>
+        <dd>{{which}}</dd>
+        <dt>Shift:</dt>
+        <dd>{{shift}}</dd>
+    </dl>
+</div>
+<div class="container">
+    <h3>Register User</h3>
+    <dl>
+        <dt>UserId:</dt>
+        <dd><input type="text" [(ngModel)]="userId" (keyup)="checkUserId($event)">
+            <span>{{msgUserId}}</span>
+        </dd>
+        <dt>Password:</dt>
+        <dd><input type="password" [(ngModel)]="pwd" (keyup)="checkPassword($event)">
+            <span>
+                <meter min="{{min}}" max="{{max}}" value="{{value}}" low="{{low}}" high="{{high}}"></meter>
+                {{msgPwd}}
+            </span>
+        </dd>
+    </dl>
+</div>
